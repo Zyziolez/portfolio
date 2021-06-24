@@ -38,6 +38,7 @@ body #footer {
   background: #3f8d92;
   color: white;
   padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 body #footer h1 {
@@ -117,6 +118,25 @@ body #image-examples section .examples-card img {
 
 #three-cards #three-arr .examples-card img {
   height: 3rem;
+  opacity: 0;
+  -webkit-animation: three-cards-animate 2s forwards;
+          animation: three-cards-animate 2s forwards;
+}
+
+#three-cards #three-arr .examples-card:nth-child(2) img {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#three-cards #three-arr .examples-card:nth-child(3) img {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#three-cards #three-arr .examples-card:hover h2 {
+  -webkit-animation: wiggle 1s forwards;
+          animation: wiggle 1s forwards;
+  opacity: 1;
 }
 
 #one-long {
@@ -148,6 +168,13 @@ body #image-examples section .examples-card img {
   font-size: 1rem;
   margin-left: calc( 20vw - 4.5rem);
   margin-top: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#one-long button:hover {
+  background: #3f8d92;
+  color: white;
 }
 
 #text-small-imgs {
@@ -257,11 +284,17 @@ body #image-examples section .examples-card img {
   min-width: 20rem;
 }
 
+#one-image .animate {
+  -webkit-animation: text-enter 1s forwards;
+          animation: text-enter 1s forwards;
+}
+
 #one-image section {
   width: 50vw;
   padding: 3vw;
   margin-top: 4rem;
   margin-left: 5rem;
+  opacity: 0;
 }
 
 #one-image section h1 {
@@ -308,6 +341,9 @@ body #image-examples section .examples-card img {
 #three-cards-offert section .offert-card {
   width: 20vw;
   margin-bottom: 1rem;
+  opacity: 0;
+  -webkit-animation: three-cards-animate 1s forwards;
+          animation: three-cards-animate 1s forwards;
 }
 
 #three-cards-offert section .offert-card ul {
@@ -343,6 +379,46 @@ body #image-examples section .examples-card img {
 }
 
 #three-cards-offert section .offert-card:nth-child(2) button {
+  background: #3f8d92;
+  color: white;
+}
+
+#three-cards-offert section .offert-card:nth-child(1) button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#three-cards-offert section .offert-card:nth-child(1) button:hover {
+  background: #3f8d92;
+  color: white;
+}
+
+#three-cards-offert section .offert-card:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#three-cards-offert section .offert-card:nth-child(2) button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#three-cards-offert section .offert-card:nth-child(2) button:hover {
+  background: transparent;
+  color: #3f8d92;
+}
+
+#three-cards-offert section .offert-card:nth-child(3) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#three-cards-offert section .offert-card:nth-child(3) button {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#three-cards-offert section .offert-card:nth-child(3) button:hover {
   background: #3f8d92;
   color: white;
 }
@@ -402,6 +478,86 @@ body #image-examples section .examples-card img {
     width: 100vw !important;
     margin-top: 1rem;
     padding-bottom: 1rem;
+  }
+}
+
+@-webkit-keyframes three-cards-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes three-cards-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  70% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  70% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes text-enter {
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes text-enter {
+  0% {
+    margin-top: 2rem;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,14 +3,14 @@ import React from 'react'
 export default function Footer() {
     return (
         <div id='footer' >
-            <h1> L O G O </h1>
+            <h1> Itinit </h1>
             <table>
                 <tr>
-                    <th>Jeden</th>
-                    <th>Dwa</th>
-                    <th>Trzy</th>
+                    <th>O nas</th>
+                    <th>Oferta</th>
+                    <th>Kontakt</th>
                 </tr>
-                <tr>
+                {/* <tr>
                     <td>pierwszy test</td>
                     <td>drugi test</td>
                     <td>trzeci test</td>
@@ -19,7 +19,7 @@ export default function Footer() {
                     <td></td>
                     <td></td>
                     <td>tu dam wiecej</td>
-                </tr>
+                </tr> */}
             </table>
         </div>
     )

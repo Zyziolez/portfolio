@@ -18,7 +18,7 @@ export default function TextSmallImgs() {
     return (
         <div id='text-small-imgs' >
             <h1> Big title </h1>
-            <p> Lorem ipsum smaller title raz dwa test 69 jol siema </p>
+            <p> Lorem ipsum either with meaningful text, or an empty string for decorative images </p>
             <section>
                  { arr.map( (ele, i) => 
                     <div className='image-small-card' key={i} >
