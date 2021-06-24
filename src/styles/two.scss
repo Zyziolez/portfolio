@@ -1,0 +1,95 @@
+$additional-color: rgb(63, 141, 146);
+#up-content{
+    height: 25rem;
+    #video{
+        position: absolute;
+        z-index: -3;
+        top: 0;
+        min-width: 100vw;
+        // display: none;
+    }
+    min-height: 20rem;
+    // background: red;
+    // text-align: center;
+    
+    position: relative;
+    overflow: hidden;
+    .media{
+        z-index: 3;
+        filter: invert(100%) sepia(2%) saturate(6%) hue-rotate(341deg) brightness(104%) contrast(102%);
+    }
+    // #menu-up{
+    //     display: flex;
+    //     section{
+    //         display: flex;
+    //     }
+    // }
+    h1{
+        // position: absolute;
+        text-align: center;
+        font-size: 4rem;
+        margin-top: 11.5rem;
+    }
+    #menu-down{
+        display: flex;
+        height: 2rem;
+        // background: pink;
+
+        margin-top: 6rem;
+        padding-left: 35vw;
+        padding-right: 35vw;
+        section{
+            justify-content: space-around;
+            // background: red;
+            width: 100%;
+            display: flex;
+            font-size: 1.5rem;
+            border-spacing: 2rem;
+            p{
+                color: white;
+            }
+        }
+        div{
+            // background: pink;
+            width: 7rem;
+           
+            img{
+                height: 2rem;
+                margin-left: 1rem;
+            }
+            position: absolute;
+            right: 0;
+            bottom: 0.05rem;
+        }
+    }
+    // #circle-one{
+    //     width: 80vw;
+    //     height: 80vw;
+    //     border-radius: 40vw;
+    //     background: rgba(125, 199, 204, 0.753);
+    //     position: absolute;
+    //     top: 5vw;
+    //     left: -20vw;
+    //     z-index: -4;
+    //     animation: circle-one 0.5s ease-in;
+    // }
+    // #circle-two{
+    //     width: 60vw;
+    //     height: 60vw;
+    //     border-radius: 30vw;
+    //     background: rgba(177, 224, 228, 0.719);
+    //     position: absolute;
+    //     top: -40vw;
+    //     right: -20vw;
+    //     z-index: -5;
+    //     animation: circle-one 1s ease-in;
+    // }
+}
+@keyframes circle-one{
+    0%{
+        opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
