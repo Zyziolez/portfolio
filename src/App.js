@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Main from './components/Main';
 
 const Projekty = lazy( () => import('./components/ImageExamples') )
-const Kontakt = lazy( () => import('./components/TextSmallImgs') )
+const Kontakt = lazy( () => import('./components/ContactUs') )
 const Oferta = lazy(() =>  import( './components/ThreeCardsOffert' ))
 const ONas = lazy(() => import('./components/ONas'))
 

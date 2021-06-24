@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
 export default function Footer() {
     return (
@@ -6,9 +7,10 @@ export default function Footer() {
             <h1> Itinit </h1>
             <table>
                 <tr>
-                    <th>O nas</th>
-                    <th>Oferta</th>
-                    <th>Kontakt</th>
+                    <th> <Link to='/' >  O nas  </Link> </th>
+                     <th> <Link to='/oferta' > Oferta </Link> </th>
+                     <th> <Link to='/projekty' > Projekty </Link> </th>
+                     <th> <Link to='/kontakt' > Kontakt </Link> </th>
                 </tr>
                 {/* <tr>
                     <td>pierwszy test</td>

@@ -2,6 +2,7 @@ import React from 'react'
 import heart from './../images/heart.svg'
 import star from './../images/star.svg'
 import crown from './../images/crown.svg'
+import {Link} from 'react-router-dom'
 
 class Card  {
     constructor( title, text, bottom, icon ){
@@ -23,14 +24,14 @@ export default function ThreeCardsOffert() {
 
     return (
         <div id='three-cards-offert' >
-            <h1> Some title </h1>
+            <h1> Nasza oferta </h1>
             <section>
             { arr.map( (ele, i) => 
             <div className='offert-card' key={i} >
                 <img src={ ele.icon } />
                 <h3> {ele.title} </h3>
                 <h4> {ele.bottom} </h4>
-                <button> Kontakt </button>
+                <Link to='/kontakt' > <button> Kontakt </button> </Link>
                 <ul>
                     {ele.text.map( (element, j) =>
                         <li key={ j } > {element} </li>
